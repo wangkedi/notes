@@ -1,3 +1,4 @@
 * Reading Notes
 ** GotGithub
    - 2014-11-24 开始阅读GotGitHub
+   - 2014-11-26 阅读GotGitHub完毕
