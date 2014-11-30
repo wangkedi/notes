@@ -68,6 +68,18 @@
       git mv file_from file_to :: 文件改名
     - 查看历史
       git log :: 按提交时间列出所有的更新，最近的更新在最上面
+      git log -p ::显示每次提交的内容差异 后面跟 -2 仅显示最近的两次更新
+      git log --pretty=oneline :: 将每个提交放在一行显示，另外还有 short full fuller参数可用。
+      git log --pretty=format :: 可以定制要显示的格式 例如 git log --pretty=format:"%h - %an - %s" 具体占位符查阅资料
+      git log -(n) :: 显示最近的n条提交
+      git log --since :: 显示指定时间之后的提交
+      git log --until :: 显示指定日期之前的提交
+      git log --author :: 显示指定作者相关的提交
+      git --committer :: 显示指定提交者相关的提交
+    - 撤销操作
+      + 修改最后一次提交
+        有时间提交完了。发现漏掉了几个文件，或者提交信息写错了。要撤销刚才的提交操作。可以使用 git commit --amend
+        此命令将使用当前暂存区快照提交。如果刚才提交没有做任何改动。直接执行此命令。相当于有机会重新编辑提交说明
 ** Git分支
 ** 服务器上的Git
 ** 分布式Git
