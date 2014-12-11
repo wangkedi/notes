@@ -103,8 +103,17 @@
         git remote rm [remotename] :: 删除远程仓库
     - 打标签
       git tag :: 列出已有的标签
-      
-      
+    - 技巧和窍门
+      1. 命令别名
+         git config --global alias.ci commit
+         git config --global alias.br bracch
+         以后如果需要输入git commit 只需要键入git ci即可。
+         使用这个技术还可以创造新的命令
+         git config --global alias.unstage 'reset HEAD --'
+         这样下面的命令完全等同
+         git unstage fileA
+         git reset HEAD fileA
+            
 ** Git分支
 ** 服务器上的Git
 ** 分布式Git
